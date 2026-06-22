@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS 360 — Ricarica (tablet)</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<div class="tablet">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="appbar">
+      <div class="platform">
+        <img class="brandlogo" src="../assets/windtre-logo.svg" alt="WINDTRE">
+        <img class="brandlogo-very" src="../assets/very-logo.svg" alt="Very Mobile">
+        <span class="platform-name">POS<b> 360</b></span>
+      </div>
+      <nav class="navmenu">
+        <a href="../index.html">Home</a>
+        <a data-mega="Applicazioni">Applicazioni<svg class="navarrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></a>
+        <a data-mega="Attività">Attività<svg class="navarrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></a>
+      </nav>
+      <div class="spacer"></div>
+      <div class="appactions">
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Webmail</div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 4h4v16h-4"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h9"/></svg>Logout</div>
+      </div>
+    </div>
+    <div class="subbar">
+      <a class="back" href="../cliente/dettaglio.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg>Torna al cliente</a>
+      <span class="crumb">Ricarica</span>
+      <div class="spacer"></div>
+      <span class="modebadge">Tablet</span>
+      <div class="op"><span class="av">LM</span>Marianeschi Luca</div>
+    </div>
+  </div>
+
+  <!-- FLOW -->
+  <div class="flow-main">
+    <div class="flow-card flow-card--wide">
+      <h2>Ricarica</h2>
+      <div class="flow-ctx">Seleziona il taglio per ricaricare la linea <b>329 9891209</b> · WINDTRE</div>
+
+      <div class="amt-grid">
+        <div class="amt">5 €<span class="special">SPECIAL</span></div>
+        <div class="amt">6 €</div>
+        <div class="amt">10 €<span class="special">SPECIAL</span></div>
+        <div class="amt">11 €</div>
+        <div class="amt">15 €</div>
+        <div class="amt sel">20 €</div>
+        <div class="amt">25 €</div>
+        <div class="amt">30 €</div>
+        <div class="amt">40 €</div>
+        <div class="amt">50 €</div>
+        <div class="amt">100 €</div>
+      </div>
+
+      <div class="flow-sec">Metodo di pagamento</div>
+
+      <a class="payopt">
+        <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></span>
+        <span><span class="pt">Carta Visa</span><span class="pd">•••• 4242</span></span>
+      </a>
+
+      <a class="payopt">
+        <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg></span>
+        <span><span class="pt">Carta Mastercard</span><span class="pd">•••• 1199</span></span>
+      </a>
+
+      <a class="payopt">
+        <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 10l9-5 9 5M5 10v8h14v-8M3 18h18"/></svg></span>
+        <span><span class="pt">Addebito su IBAN</span><span class="pd">•••• 8821 · SDD</span></span>
+      </a>
+
+      <a class="payopt sel">
+        <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8a8 8 0 010 8M9.5 5a12 12 0 010 14M13 2.5a16 16 0 010 19"/></svg></span>
+        <span><span class="pt">Contactless</span><span class="pd">Carta o dispositivo contactless del cliente</span></span>
+        <svg class="pcheck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>
+      </a>
+
+      <a class="payopt disabled">
+        <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+        <span><span class="pt">Contanti</span><span class="pwarn">Richiede la postazione fissa</span></span>
+      </a>
+
+      <div class="flow-actions">
+        <a class="linkback" href="../cliente/dettaglio.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg>Annulla</a>
+        <a class="btn btn--primary" href="pagamento.html">Ricarica 20 €</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="../assets/menu.js"></script>
+</body>
+</html>

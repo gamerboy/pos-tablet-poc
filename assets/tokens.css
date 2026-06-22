@@ -1,0 +1,122 @@
+/* ========================================================================
+   POS Tablet — Design Tokens
+   Fonte autorevole: Figma "GENERAL WIKI" (Design System WINDTRE)
+   fileKey be4QmZ8jd0zwfyfIJUAvFS · estratti via connettore Figma, giu 2026
+   Modello colore (verificato su componente Button, nodo 24837:5991):
+     ARANCIONE = brand/logo · VIOLA #6207ab = colore delle AZIONI.
+   I colori semantici servono a riprodurre l'evolutiva POS 360
+   (semafori dei tracker, badge dello storico interazioni).
+   ======================================================================== */
+
+:root {
+  /* ---- BRAND (DSM) — solo identità/logo, NON azioni ---- */
+  --w3-orange:        #ff6900;   /* Orange medium (logo) */
+  --w3-orange-dark:   #fc4a14;   /* Orange dark — accent brand */
+  --w3-orange-soft:   #ffe5d0;
+  --w3-orange-light:  #fff4e6;
+
+  /* ---- AZIONI (DSM · componente Button) ---- */
+  --action:          #6207ab;   /* Component/Button/primary — CTA primarie */
+  --action-hover:    #46057c;   /* Component/Button/primary-hover */
+  --action-disabled: #c09cdd;   /* Component/Button/primary-disabled */
+  --action-soft:     #efe6f7;   /* Component/Chips/background */
+  --action-light:    #f7f3fb;   /* Component/Button/secondary-hover */
+  --on-action:       #ffffff;   /* Text/Button/primary */
+
+  /* ---- INK / NEUTRI (DSM · Universal, verificati) ---- */
+  --ink-black:    #000000; /* Universal Black — testo, sfondo CTA, link sottolineati */
+  --ink-900:      #1e1e1e; /* Black Medium — testi, navigation dots */
+  --ink-darkmode: #303030; /* Black Dark Mode — solo background darkmode */
+  --ink-700: #595959;   /* Grey Dark — hover */
+  --ink-500: #9e9e9e;   /* Grey Light — stato disabilitato */
+  --ink-300: #d3d3d2;   /* Grey Extra Light — stroke */
+  --ink-100: #ededed;
+  --ink-50:  #f8f8f8;   /* Grey White — bg evidenza */
+  --ink-25:  #fcfcfc;
+
+  /* ---- SEMANTICI (DSM · Universal · verificati) ----
+     Il DSM definisce SOLO yellow/red/green. NON esiste un blu "info":
+     i badge informativi di POS 360 (es. "modifica piano", "ricarica")
+     vanno mappati su neutro o accent viola, non su un blu inventato.
+     I *-soft sono tinte chiare DERIVATE (non in palette), per i fondi badge. */
+  --success:      #0e6349;  /* Green (success) — esiti positivi, semaforo "ok" */
+  --success-soft: #e3efeb;  /* derivato */
+  --warning:      #fbb03a;  /* Yellow (alert) — avvisi, semaforo "in corso" */
+  --warning-soft: #fdf0d9;  /* derivato */
+  --error:        #ad1010;  /* Red (error light mode) — "NO", errore pagamento */
+  --error-soft:   #f6e0e0;  /* derivato */
+  --info:         var(--ink-700);   /* nessun blu nel DSM → neutro grigio */
+  --info-soft:    var(--ink-50);
+
+  /* ---- COMPONENTI (DSM, valori verificati su nodo Button 24837:5991) ---- */
+  --chips-bg:        #efe6f7;   /* Component/Chips/background */
+  --chips-text:      #6207ab;   /* Text/Chips/neutral */
+  --chips-stroke-sel:#c09cdd;   /* Stroke/Chips/selected */
+  --chips-stroke-hov:#6207ab;   /* Stroke/Chips/hover */
+  --tab-bg-selected: #6207ab;   /* Component/Tab/background-selected */
+  --tab-bg-neutral:  #f8f8f8;   /* Component/Tab/background-neutral */
+
+  /* ---- BACKGROUND ---- */
+  --bg-page:    #ffffff;
+  --bg-app:     #f4f5f7;   /* sfondo area di lavoro tablet */
+  --bg-section: #f8f8f8;
+
+  /* ---- TIPOGRAFIA (DSM · Montserrat) ---- */
+  --font-stack: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* scala web DSM */
+  --fs-uber:   41px;  --lh-uber:   52px;   /* Uber 3 */
+  --fs-h1:     32px;  --lh-h1:     40px;   /* Titolo 1 */
+  --fs-h4:     24px;  --lh-h4:     32px;   /* Titolo 4 */
+  --fs-body:   16px;  --lh-body:   24px;   /* Testo M */
+  --fs-s:      14px;  --lh-s:      20px;   /* Testo S (regular/semibold/caps) */
+  --fs-xs:     12px;  --lh-xs:     16px;   /* Testo XS */
+  --fs-foot:   11px;  --lh-foot:   16px;   /* Footnote */
+
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --ls-body: 0.02em;   /* DSM Testo M/XS letterSpacing 2 */
+  --ls-foot: 0.06em;   /* DSM Footnote letterSpacing 6 (label/eyebrow) */
+
+  /* ---- SPAZIATURA (DSM · XS=2 … ML=24) ---- */
+  --sp-xs:  2px;
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:  12px;
+  --sp-s:  16px;
+  --sp-m:  20px;
+  --sp-ml: 24px;   /* padding-ML DSM */
+  --sp-l:  32px;
+  --sp-xl: 40px;
+
+  /* ---- RAGGI ---- */
+  --radius-sm:   8px;
+  --radius-md:  12px;
+  --radius-card:16px;
+  --radius-xl:  60px;   /* DSM radius-xl */
+  --radius-pill:999px;
+
+  /* ---- ELEVATION (DSM) ---- */
+  --elev-card: 0 1px 4px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.10); /* Elevation 0.5 */
+  --elev-drop: 0 2px 2px rgba(0,0,0,0.10), 0 2px 10px rgba(0,0,0,0.10); /* drop-shadow (button/chip) */
+  --elev-modal: 0 16px 48px rgba(0,0,0,0.16);
+
+  /* ---- DERIVATI DAI COMPONENTI (audit completo DSM) ----
+     L'arancione NON è solo logo: il componente Prezzo lo usa come
+     valore (gradiente) e l'Elenco Puntato nei check decorativi. */
+  --price:           #ff6900;                         /* valore prezzo / highlight */
+  --price-gradient:  linear-gradient(135deg, #ff6900, #fc4a14);
+  --surface-dark:    #303030;                         /* Toast/banner dark, darkmode */
+  --stripe-width:    4px;                             /* left-stripe semantica Snackbar/Toast */
+
+  /* constraint di componente */
+  --tooltip-max-1:   300px;
+  --tooltip-max-2:   312px;
+  --tooltip-max-3:   600px;
+
+  /* ---- TRANSIZIONI ---- */
+  --t-fast: 120ms ease;
+  --t-base: 200ms ease;
+}

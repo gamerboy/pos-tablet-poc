@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS 360 — Catalogo telefoni (tablet)</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<div class="tablet">
+
+  <!-- HEAD -->
+  <div class="cat-head">
+    <h1>Catalogo telefoni</h1>
+    <a class="x" href="../mobile/configurazione.html" title="Chiudi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></a>
+  </div>
+
+  <!-- TOOLBAR -->
+  <div class="cat-toolbar">
+    <div class="cat-dd">Marca<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+    <div class="cat-dd">Modello<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+    <div class="cat-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input type="text" placeholder="Cerca telefono"></div>
+  </div>
+
+  <!-- BODY: filtri + tabella -->
+  <div class="cat-body">
+    <aside class="cat-filters">
+      <div class="ft-title">Filtri</div>
+      <div class="ft-count">1.600 risultati</div>
+
+      <div class="ft-sec">
+        <div class="ft-h">Servizi<span class="pm">−</span></div>
+        <div class="ck on"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Forward Trade In</div>
+        <div class="ck on"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>Reload Plus</div>
+        <div class="ck off"><span class="box"></span>Nessuno</div>
+      </div>
+      <div class="ft-sec"><div class="ft-h">MDP/FIN<span class="pm">+</span></div></div>
+      <div class="ft-sec"><div class="ft-h">Durata<span class="pm">+</span></div></div>
+      <div class="ft-sec">
+        <div class="ft-h" style="cursor:default">Anticipo</div>
+        <div class="ft-range"><div class="rl"><span>0 €</span><span>500 €</span></div><div class="track"><i></i><span class="kn" style="left:12%"></span><span class="kn" style="left:78%"></span></div></div>
+      </div>
+      <div class="ft-sec">
+        <div class="ft-h" style="cursor:default">Importo rata</div>
+        <div class="ft-range"><div class="rl"><span>0 €</span><span>60 €</span></div><div class="track"><i></i><span class="kn" style="left:12%"></span><span class="kn" style="left:78%"></span></div></div>
+      </div>
+      <div class="ft-sec" style="border-bottom:none;">
+        <div class="ft-h" style="cursor:default">Rata finale</div>
+        <div class="ft-range"><div class="rl"><span>0 €</span><span>400 €</span></div><div class="track"><i></i><span class="kn" style="left:12%"></span><span class="kn" style="left:78%"></span></div></div>
+      </div>
+    </aside>
+
+    <div class="cat-tablewrap">
+      <table class="cattab">
+        <thead><tr><th></th><th>Marca</th><th>Modello</th><th>MDP/FIN</th><th>Durata</th><th>Anticipo</th><th>Importo rata</th><th>Rata finale</th><th>Sconto</th><th></th></tr></thead>
+        <tbody>
+          <tr class="sel">
+            <td><span class="radio"></span></td>
+            <td>Apple</td><td class="mod">iPhone 17 256GB</td><td>Compass</td><td>30 mesi</td><td>99,99 €</td><td>29,99 €</td><td>0,01 €</td><td>0,3 €</td>
+            <td class="exp">−</td>
+          </tr>
+          <tr class="rate-row">
+            <td colspan="10">
+              <div class="rate-grid">
+                <div class="rate-f"><div class="k">Memoria device</div><div class="v">256 GB</div></div>
+                <div class="rate-f"><div class="k">Numero rate</div><div class="v">30</div></div>
+                <div class="rate-f"><div class="k">Rata 1–29 lorda sconto</div><div class="v">30,00 €</div></div>
+                <div class="rate-f"><div class="k">Rata netta sconto</div><div class="v">29,99 €</div></div>
+                <div class="rate-f"><div class="k">Anticipo</div><div class="v">99,99 €</div></div>
+                <div class="rate-f"><div class="k">Costo</div><div class="v">999,90 €</div></div>
+                <div class="rate-f"><div class="k">Ultima rata lorda sconto</div><div class="v">29,91 €</div></div>
+                <div class="rate-f"><div class="k">Sconto totale</div><div class="v">0,30 €</div></div>
+              </div>
+              <div class="rate-note"><b>Forward Trade In</b> · scegliendo il trade-in, a fine periodo con restituzione o sostituzione del device viene scontata la rata finale. Ricorda al cliente che lo sconto mensile si applica anche alla rata finale se rimane cliente WINDTRE per tutta la durata del vincolo.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="radio"></span></td>
+            <td>Samsung</td><td class="mod">Galaxy S25 256GB</td><td>Compass</td><td>24 mesi</td><td>49,99 €</td><td>24,99 €</td><td>49,00 €</td><td>0,2 €</td>
+            <td class="exp">+</td>
+          </tr>
+          <tr>
+            <td><span class="radio"></span></td>
+            <td>Apple</td><td class="mod">iPhone 16 128GB</td><td>Carta di Credito</td><td>30 mesi</td><td>0,00 €</td><td>22,99 €</td><td>0,01 €</td><td>0,3 €</td>
+            <td class="exp">+</td>
+          </tr>
+          <tr>
+            <td><span class="radio"></span></td>
+            <td>Xiaomi</td><td class="mod">14 256GB</td><td>Compass</td><td>24 mesi</td><td>0,00 €</td><td>16,99 €</td><td>0,01 €</td><td>0,2 €</td>
+            <td class="exp">+</td>
+          </tr>
+          <tr>
+            <td><span class="radio"></span></td>
+            <td>Apple</td><td class="mod">iPhone 17 Pro 256GB</td><td>Compass</td><td>30 mesi</td><td>149,99 €</td><td>34,99 €</td><td>0,01 €</td><td>0,3 €</td>
+            <td class="exp">+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FOOT -->
+  <div class="cat-foot">
+    <a class="linkback" href="../mobile/configurazione.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg>Indietro</a>
+    <div class="gap"></div>
+    <div class="imei"><input type="text" placeholder="IMEI"><a class="btn btn--secondary" href="#">Verifica IMEI</a></div>
+    <a class="btn btn--primary" href="../mobile/con-telefono.html">Procedi</a>
+  </div>
+
+</div>
+<script src="../assets/menu.js"></script>
+</body>
+</html>

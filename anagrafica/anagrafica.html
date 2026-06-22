@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS 360 — Gestione anagrafica (tablet)</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<div class="tablet">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="appbar">
+      <div class="platform">
+        <img class="brandlogo" src="../assets/windtre-logo.svg" alt="WINDTRE">
+        <img class="brandlogo-very" src="../assets/very-logo.svg" alt="Very Mobile">
+        <span class="platform-name">POS<b> 360</b></span>
+      </div>
+      <nav class="navmenu">
+        <a href="../index.html">Home</a>
+        <a data-mega="Applicazioni">Applicazioni<svg class="navarrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></a>
+        <a data-mega="Attività">Attività<svg class="navarrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></a>
+      </nav>
+      <div class="spacer"></div>
+      <div class="appactions">
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Webmail</div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 4h4v16h-4"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h9"/></svg>Logout</div>
+      </div>
+    </div>
+    <div class="subbar">
+      <a class="back" href="../cliente/dettaglio.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg>Torna al cliente</a>
+      <span class="crumb">Gestione anagrafica</span>
+      <div class="spacer"></div>
+      <span class="modebadge">Tablet</span>
+      <div class="op"><span class="av">LM</span>Marianeschi Luca</div>
+    </div>
+  </div>
+
+  <!-- ANAGRAFICA -->
+  <div class="ana">
+    <div class="ana-head">
+      <h1>Gestione anagrafica</h1>
+      <a class="ana-edit" href="#" title="Modifica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h4L18 10l-4-4L4 16z"/><path d="M14 6l4 4"/></svg></a>
+    </div>
+
+    <!-- avvio OCR: documento da aggiornare -->
+    <div class="scan-banner">
+      <span class="sb-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M14 9h4M14 13h4M6 16h8"/></svg></span>
+      <div>
+        <div class="sb-t">Documento d'identità da aggiornare</div>
+        <div class="sb-d">Scansiona la carta d'identità del cliente: rilevo e compilo i dati in automatico.</div>
+      </div>
+      <a class="btn btn--primary" href="scansione.html">Scansiona documento</a>
+    </div>
+
+    <div class="ana-sec">
+      <h3>Dati anagrafici</h3>
+      <div class="ana-grid">
+        <div class="ana-f"><div class="k">Profilo</div><div class="v">Privato</div></div>
+        <div class="ana-f"><div class="k">Turista</div><div class="v">No</div></div>
+        <div class="ana-f"><div class="k">Sesso</div><div class="v">Maschio</div></div>
+        <div class="ana-f"><div class="k">Nome</div><div class="v">Paolino</div></div>
+        <div class="ana-f"><div class="k">Cognome</div><div class="v">Paperino</div></div>
+        <div class="ana-f"><div class="k">Codice fiscale</div><div class="v">PLNPRN80A01H501Y</div></div>
+        <div class="ana-f"><div class="k">Data di nascita</div><div class="v">01/01/1980</div></div>
+        <div class="ana-f"><div class="k">Provincia di nascita</div><div class="v">RM</div></div>
+        <div class="ana-f"><div class="k">Comune di nascita</div><div class="v">Roma</div></div>
+      </div>
+    </div>
+
+    <div class="ana-sec">
+      <h3>Indirizzo di residenza</h3>
+      <div class="ana-grid">
+        <div class="ana-f"><div class="k">Indirizzo</div><div class="v">Via Cavour</div></div>
+        <div class="ana-f"><div class="k">Numero civico</div><div class="v">10</div></div>
+        <div class="ana-f"><div class="k">Località</div><div class="v">—</div></div>
+        <div class="ana-f"><div class="k">CAP</div><div class="v">00184</div></div>
+        <div class="ana-f"><div class="k">Provincia</div><div class="v">RM</div></div>
+        <div class="ana-f"><div class="k">Città</div><div class="v">Roma</div></div>
+        <div class="ana-f"><div class="k">Nazione</div><div class="v">Italia</div></div>
+      </div>
+    </div>
+
+    <div class="ana-sec">
+      <h3>Documento</h3>
+      <div class="ana-grid">
+        <div class="ana-f missing"><div class="k">Tipo documento</div><div class="v">Da acquisire</div></div>
+        <div class="ana-f missing"><div class="k">Numero documento</div><div class="v">Da acquisire</div></div>
+        <div class="ana-f missing"><div class="k">Rilasciato il</div><div class="v">Da acquisire</div></div>
+      </div>
+    </div>
+
+    <div class="ana-sec">
+      <h3>Recapiti</h3>
+      <div class="ana-grid">
+        <div class="ana-f"><div class="k">Telefono principale</div><div class="v">329 9891209</div></div>
+        <div class="ana-f"><div class="k">Telefono alternativo</div><div class="v">—</div></div>
+        <div class="ana-f"><div class="k">Email</div><div class="v">paolino.paperino@email.it</div></div>
+      </div>
+    </div>
+
+    <div class="ana-actions">
+      <a class="linkback" href="../cliente/dettaglio.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"/></svg>Torna al cliente</a>
+      <a class="btn btn--secondary" href="#">Modifica a mano</a>
+      <a class="btn btn--primary" href="scansione.html">Scansiona documento</a>
+    </div>
+  </div>
+
+</div>
+<script src="../assets/menu.js"></script>
+</body>
+</html>
