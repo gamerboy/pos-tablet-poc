@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Tech Corner">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1331"/>
+      <stop offset="1" stop-color="#fc4a14"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g2)"/>
+  <g stroke="#ffffff" stroke-opacity="0.22" stroke-width="3" fill="none">
+    <path d="M80 120h120v0M200 120v80h120M320 200h120M440 200v-90h90"/>
+    <path d="M120 260h90v60M210 320h160M370 320v-70h120"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.8">
+    <circle cx="80" cy="120" r="7"/><circle cx="200" cy="200" r="7"/>
+    <circle cx="440" cy="200" r="7"/><circle cx="530" cy="110" r="7"/>
+    <circle cx="120" cy="260" r="7"/><circle cx="370" cy="250" r="7"/>
+  </g>
+  <g transform="translate(258 118)">
+    <rect x="0" y="0" width="124" height="124" rx="18" fill="#ffffff" fill-opacity="0.16"/>
+    <rect x="26" y="26" width="72" height="72" rx="10" fill="#ff6900"/>
+    <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-opacity="0.85">
+      <path d="M40 0v-16M62 0v-16M84 0v-16M40 124v16M62 124v16M84 124v16"/>
+      <path d="M0 40h-16M0 62h-16M0 84h-16M124 40h16M124 62h16M124 84h16"/>
+    </g>
+  </g>
+</svg>
